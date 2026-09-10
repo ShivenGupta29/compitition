@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- LOGIN FORM -->
+      <form id="loginForm" class="form-box active">
+        <h2>Welcome Back</h2>
+
+        <div class="input-group">
+          <label for="loginUsername">Username</label>
+          <input
+            type="text"
+            id="loginUsername"
+            placeholder="Enter your username"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="loginPassword">Password</label>
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn login-btn">Login</button>
+        <p class="switch-text">
+          Don't have an account? <span id="showRegister">Register here</span>
+        </p>
+      </form>
+
+      <!-- REGISTER FORM -->
+      <form id="registerForm" class="form-box hidden">
+        <h2>Create Account</h2>
+
+        <div class="input-group">
+          <label for="regUsername">Username</label>
+          <input
+            type="text"
+            id="regUsername"
+            placeholder="Choose a username"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="regPassword">Password</label>
+          <input
+            type="password"
+            id="regPassword"
+            placeholder="Create a password"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="regConfirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="regConfirmPassword"
+            placeholder="Confirm your password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn register-btn">Register</button>
+        <p class="switch-text">
+          Already have an account? <span id="showLogin">Login here</span>
+        </p>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
