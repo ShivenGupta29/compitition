@@ -1,0 +1,47 @@
+:root {
+  /* Core blues */
+  --navy-900: #14264a;
+  --navy-800: #1b3a6b;
+  --blue-600: #2f6fed;
+  --cyan-400: #22d3ee;
+
+  /* Surfaces */
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+
+  /* Text */
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+
+  /* Status */
+  --status-open: #3b82f6;
+  --status-progress: #f59e0b;
+  --status-blocked: #ef4444;
+  --status-done: #10b981;
+
+  /* Effects */
+  --radius: 16px;
+  --shadow: 0 2px 12px rgba(20, 38, 74, 0.08);
+  --sidebar-gradient: linear-gradient(160deg, var(--navy-900), var(--navy-800));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+}
+
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--navy-900), var(--blue-600));
+}
