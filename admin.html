@@ -1,83 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Lala Tech</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/components.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
     <script src="https://unpkg.com/lucide@latest"></script>
-  </head>
-  <body>
+</head>
+<body>
     <div class="app-layout">
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        <h2 class="logo-text">LALA TECH</h2>
-        <nav class="nav-menu">
-          <a href="#" class="nav-item active"
-            ><i data-lucide="layout-dashboard"></i> Overview</a
-          >
-          <a href="#" class="nav-item"
-            ><i data-lucide="list-todo"></i> All Tasks</a
-          >
-          <a href="#" class="nav-item"><i data-lucide="users"></i> Employees</a>
-          <a href="index.html" class="nav-item logout-link"
-            ><i data-lucide="log-out"></i> Logout</a
-          >
-        </nav>
-      </aside>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo-text">LALA TECH</h2>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active"><i data-lucide="layout-dashboard"></i> Overview</a>
+                <a href="#" class="nav-item"><i data-lucide="list-todo"></i> All Tasks</a>
+                <a href="#" class="nav-item"><i data-lucide="users"></i> Employees</a>
+                <a href="index.html" class="nav-item logout-link"><i data-lucide="log-out"></i> Logout</a>
+            </nav>
+        </aside>
 
-      <!-- Main Content -->
-      <main class="main-content">
-        <!-- Quick Add Bar -->
-        <header class="top-bar">
-          <div class="quick-add">
-            <i data-lucide="plus-circle"></i>
-            <input
-              type="text"
-              placeholder="Quick add task... (Press Enter)"
-              class="input quick-add-input"
-            />
-            <select class="input select-assignee">
-              <option>Assign to...</option>
-              <option>Rahul</option>
-              <option>Priya</option>
-            </select>
-          </div>
-        </header>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Quick Add Bar -->
+            <header class="top-bar">
+                <div class="quick-add">
+                    <i data-lucide="plus-circle"></i>
+                    <input type="text" placeholder="Quick add task... (Press Enter)" class="input quick-add-input">
+                    <select class="input select-assignee">
+                        <option>Assign to...</option>
+                        <option>Rahul</option>
+                        <option>Priya</option>
+                    </select>
+                </div>
+            </header>
 
-        <div class="dashboard-content">
-          <h1 class="page-title">Company Overview</h1>
-
-          <!-- Stat Cards -->
-          <div class="stats-grid">
-            <div class="stat-card card">
-              <div class="stat-number">24</div>
-              <div class="stat-label">Total Tasks</div>
+            <div class="dashboard-content">
+                <h1 class="page-title">Company Overview</h1>
+                
+                <!-- Stat Cards with New Workflow Metrics -->
+                <div class="stats-grid">
+                    <div class="stat-card card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Waiting For Us</div>
+                    </div>
+                    <div class="stat-card card">
+                        <div class="stat-number text-progress">0</div>
+                        <div class="stat-label">Waiting on Client</div>
+                    </div>
+                    <div class="stat-card card">
+                        <div class="stat-number text-blocked">0</div>
+                        <div class="stat-label">Unassigned</div>
+                    </div>
+                    <div class="stat-card card">
+                        <div class="stat-number text-blocked">0</div>
+                        <div class="stat-label">Overdue</div>
+                    </div>
+                </div>
             </div>
-            <div class="stat-card card">
-              <div class="stat-number text-progress">8</div>
-              <div class="stat-label">In Progress</div>
-            </div>
-            <div class="stat-card card">
-              <div class="stat-number text-blocked">3</div>
-              <div class="stat-label">Overdue</div>
-            </div>
-            <div class="stat-card card">
-              <div class="stat-number text-done">13</div>
-              <div class="stat-label">Completed</div>
-            </div>
-          </div>
-        </div>
-      </main>
+        </main>
     </div>
-    <script>
-      lucide.createIcons();
-    </script>
-  </body>
+    
+    <script src="js/dashboard-admin.js" type="module"></script>
+    <script>lucide.createIcons();</script>
+</body>
 </html>
